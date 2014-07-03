@@ -1,3 +1,5 @@
+#How to add Your Code
+
 Hi there. Since we're working on Learn Python the Hard Way right now, I want to give you the opportunity to share your progress with the rest of Team Python. That's why I'm going to give you a step-by-step tutorial on how to set up git and share your code with the rest of us.
 
 1. [Create a GitHub account.](https://github.com/) If you don't know, GitHub is a community where programmers can contribute to projects and share their own code. If you don't have one already, you definitely will need one in the future.
