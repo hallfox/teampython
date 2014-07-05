@@ -7,6 +7,8 @@ print(formatter % (formatter, formatter, formatter, formatter))
 print(formatter % (
     "I had this thing.",
     "That you could type up right.",
+    #since we use ' in this string, it will print the string
+    #literal with " around it
     "But it didn't sing.",
     "So I said goodnight."
 ))
