@@ -26,3 +26,9 @@ print(txt_again.read())
 #  extensive knowledge."
 # - Zed A. Shaw, Learn Python the Hard Way
 #good stuff
+
+#do remember to always close your files always
+#VERY IMPORTANT NOT KIDDING
+txt.close()
+pyfile.close()
+txt_again.close()
