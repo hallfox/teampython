@@ -1,0 +1,233 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf200
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Menlo-Regular;\f2\fmodern\fcharset0 Courier;
+\f3\fswiss\fcharset0 ArialMT;}
+{\colortbl;\red255\green255\blue255;\red234\green234\blue234;\red26\green26\blue26;\red0\green0\blue233;
+}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid1\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat3\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid101\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid2}
+{\list\listtemplateid3\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid201\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid3}
+{\list\listtemplateid4\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid301\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid4}
+{\list\listtemplateid5\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid401\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid5}
+{\list\listtemplateid6\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid501\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid6}
+{\list\listtemplateid7\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat4\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid601\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid7}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}{\listoverride\listid3\listoverridecount0\ls3}{\listoverride\listid4\listoverridecount0\ls4}{\listoverride\listid5\listoverridecount0\ls5}{\listoverride\listid6\listoverridecount0\ls6}{\listoverride\listid7\listoverridecount0\ls7}}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720
+
+\f0\b\fs26 \cf0 \ul \ulc0 Exercise 5: More Variable and printing
+\b0 \ulnone \
+Now we\'92ll do even more typing of variables and printing them out.\
+This time we\'92ll use something called a \'93format string\'94.\
+Every time you put \'93(double quotes) around a piece of text you have been making a 
+\i string
+\i0 .\
+A string is how you make something that your program might give to a human. You print them, save them to files, send them to web servers, all sorts.\
+\
+Strings are very helpful.\
+In this exercise we will learn how to make strings with variables embedded in them.\
+You embed variables inside a string by using specialized format sequences, and then putting the variables at the end with a special syntax that tells python , \'93Hey this is a format string, put variables here\'94.\
+\
+\
+\'97\'97\'97\'97\
+Code for ex5;\
+\
+\
+Extra Credit:\
+\pard\tx220\tx720\pardeftab720\li720\fi-720
+\ls1\ilvl0\cf0 {\listtext	1.	}Done- Quick way to do this is 
+\b Command + F 
+\b0 - Find the words you want, then enter what you want to replace them with, then click replace all.\
+{\listtext	2.	}Done\
+{\listtext	3.	}Python formatting characters and meanings.\
+\pard\pardeftab720
+\cf0 \'97\'97\'97\'97\'97\
+\pard\pardeftab720
+
+\fs24 \cf0 {{\NeXTGraphic unknown.png \width17680 \height8740 \noorient
+}¬}\pard\pardeftab720
+
+\fs26 \cf0 \
+Explaining\'a0
+\b \'91r\'92
+\b0  &
+\b \'a0\'a0\'92s\'92
+\b0 \
+
+\b \'97\'97\'a0
+\b0 \
+
+\b \'91%r\'92 
+\b0 = Uses a \'91repr()\'92 function. This works by assigning a value a variable-\
+Example:\
+\pard\pardeftab720\sl340
+
+\f1\fs28 \cf0 \cb2 >>> x = 'foo'\
+>>> x\
+\pard\pardeftab720\sl340
+
+\f2 \cf0 "\'92
+\f1 foo\'92"
+\f2\fs26 \
+\pard\pardeftab720
+
+\f0 \cf0 \cb1 When you call for repr(x), instead of outputting \'91x\'92, it will output \'91foo\'92\
+\'97\'97\
+
+\b \'91%s\'92 
+\b0 = Uses a \'91str()\'92 function. This works in the a similar way to repr(x).\
+Example:\
+\pard\pardeftab720
+
+\f2 \cf0 \cb2 >>> horsemen = ['war', 'pestilence', 'famine\'92]\
+>>> str(horsemen)\
+="['war', 'pestilence', 'famine', 'Powerbuilder']"\
+\pard\pardeftab720
+
+\f0\b \cf0 \cb1 The difference:
+\b0 \
+str() is designed to be shorter, and more user friendly, and is good for just outputting code.\
+repr() is designed to provide more detail, when you output repr() it is usually in a format similar to \'93\'91foo\'92\'94, which can then be pasted into python as a valid expression.\'a0\
+\
+%s = Commonly for Text.\
+%r = Commonly for numbers.\
+\'97\'97\'97\'97\
+\pard\tx220\tx720\pardeftab720\li720\fi-720
+\ls2\ilvl0
+\b \cf0 {\listtext	3.	}\ul Further explanation to the Python formatting:
+\b0 \ulnone \
+\pard\pardeftab720
+
+\b \cf0 \ul String formatting operators:
+\b0 \ulnone \
+String format operator (
+\b %
+\b0 ), is unique to strings, it allows you to call upon a string variable that has been predefined:\
+\pard\pardeftab720
+
+\fs24 \cf0 {{\NeXTGraphic 1__#$!@%!#__unknown.png \width7820 \height380 \noorient
+}¬}\pard\pardeftab720
+
+\fs26 \cf0 \
+\'91
+\b % fopertor
+\b0 \'92 \'a0= Is a tuple.\
+\
+
+\b \ul What is a Tuple
+\b0 \ulnone \
+\pard\pardeftab720\sl320
+
+\f3 \cf3 Definition- \'91tuple\'92\'a0= A data structure consisting of multiple parts. (In a relational database) an ordered set of data\'a0constituting\'a0a record.
+\f0 \cf0 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl320
+\ls3\ilvl0
+\f3 \cf3 {\listtext	\'95	}Tuple is an ordered set of values.\'a0
+\f0 \cf0 \
+\ls3\ilvl0
+\f3 \cf3 {\listtext	\'95	}The\'a0separator for each value is usually a\'a0comma.
+\f0 \cf0 \
+\pard\pardeftab720\sl320
+
+\f3\b \cf3 \ul \ulc3 Common uses for the tuple as a data type are:
+\f0\b0 \cf0 \ulnone \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl320
+\ls4\ilvl0
+\f3 \cf3 {\listtext	1.	}Passing a string of parameters from one program to another.
+\f0 \cf0 \
+\ls4\ilvl0
+\f3 \cf3 {\listtext	2.	}Representing a set of value attributes in a relational database.
+\f0 \cf0 \
+\pard\pardeftab720\sl320
+
+\f3 \cf3 \
+\pard\pardeftab720\sl320
+
+\b \cf3 String 
+\b0 - In computer programming, a 
+\b String 
+\b0 is traditionally a 
+\i\b sequence of characters
+\i0\b0 , either as a literal constant(
+\b fixed value
+\b0 ) or as some kind of variable. \'a0A string is generally used to describe a 
+\i\b data type 
+\i0\b0 and is often implemented as an\'a0\'91
+\i\b array of bites
+\i0\b0 \'92 (
+\i\b words
+\i0\b0 ) that 
+\i\b stores
+\i0\b0  
+\i\b a sequence
+\i0\b0  of elements (
+\i\b typically characters
+\i0\b0 ).
+\f0 \cf0 \
+\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl320
+\ls5\ilvl0
+\f3 \cf3 {\listtext	\'95	}In some languages\'a0
+\b tuples
+\b0  can be 
+\b nested
+\b0 (inside another) within other
+\b  tuples 
+\b0 within parentheses or brackets or other delimiters(things used to\'a0separate data fields -Example- \'a0"
+\b ,
+\b0 "\'a0
+\b (comma\'92s),\'a0
+\b0 \'93
+\b ()
+\b0 \'94
+\b (brackets) 
+\b0 ).
+\f0 \cf0 \
+\pard\pardeftab720\sl320
+
+\f3 \cf3 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl320
+\ls6\ilvl0\cf3 {\listtext	\'95	}Tuples can contain a mixture of other data types:
+\f0 \cf0 \
+\pard\pardeftab720\sl320
+
+\f3\b \cf3 \ul Example of different data types in a tuple:
+\f0\b0 \cf0 \ulnone \
+\pard\pardeftab720\sl320
+
+\f3\b \cf3 	'17,*,2.49,Seven'
+\f0\b0 \cf0 \
+
+\f3\b \cf3 \
+\pard\pardeftab720
+
+\f0\b0 \cf0 The above is an example as a
+\b  4-tuple
+\b0 , since it contains 
+\b four values
+\b0 .\
+An 
+\b n-tuple 
+\b0 would be one with an 
+\b indeterminate
+\b0 (not exactly known or defined)\'a0or 
+\b unspecified number
+\b0  of 
+\b values
+\b0 .\
+\
+\
+
+\b Extra Credit(continue)
+\b0 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720
+\ls7\ilvl0\cf4 {\listtext	4.	}{\field{\*\fldinst{HYPERLINK "http://pastebin.com/JqFY3ykh"}}{\fldrslt \ul http://pastebin.com/JqFY3ykh}}\cf0 \
+\pard\pardeftab720
+\cf0 (Solution =\
+
+\b Var \'a0 \'a0 \'a0 = 
+\b0 lbtokg = weight / 2.2\
+
+\b Output = 
+\b0 print "That " "%.2f" " in kg." % lbtokg\
+}
