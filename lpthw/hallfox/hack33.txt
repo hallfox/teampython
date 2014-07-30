@@ -1,0 +1,7 @@
+Ways to hack ex33_hack.py:
+
+1 & 2. Enter a non-number for either input, throws ValueError
+
+3 & 4. Enter a number <= 0 as an input, throws UnboundLocalError
+
+5. Enter in an integer that's so big it takes up all your RAM; unlikely, but it `could` happen.
