@@ -40,12 +40,16 @@ def look():
 
 def man():
     """ Lists valid commands. Add yours if you add any. """
-    print("\nValid commands: look, help, quit")
+    print("\nValid commands: look, help, quit, eat")
 
 def stop():
     """ Quits the game. """
     r = safe(input("\nAre you sure you want to quit? (y/n) "))
     return r == 'y'
+	
+def eat():
+	"""If the first room we go into is the cafeteria we might as well check out the food"""
+	
 
 
 name = setup()
